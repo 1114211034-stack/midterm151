@@ -15,6 +15,19 @@
         height: 100%;
         object-fit: cover;
       }
+
+      .carousel-title {
+        position: absolute;
+        z-index: 2;
+        bottom: 2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 15pt;
+        text-align: center;
+        white-space: nowrap;
+        text-shadow: 0 1px 5px #000;
+      }
     </style>
 </head>
 <body>
@@ -40,6 +53,7 @@
         <img src="https://www.travel.taipei/content/images/articles/113530/1024x768_articles-image-oqsn3wun20ujcsbdlchyra.jpg" class="d-block carousel-image" alt="輪播圖片 4">
       </div>
     </div>
+    <div class="carousel-title">元宵Lantern Festival</div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">上一張</span>
