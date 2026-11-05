@@ -6,8 +6,17 @@
     <title>圖片輪播</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+      body {
+        background-color: #251c1c;
+      }
+
       .carousel-item {
         aspect-ratio: 16 / 9;
+      }
+
+      #carouselExample {
+        width: 80%;
+        margin-inline: auto;
       }
 
       .carousel-image {
@@ -28,12 +37,36 @@
         white-space: nowrap;
         text-shadow: 0 5px 10px #000;
       }
+
+      .card-row {
+        display: flex;
+        gap: 10pt;
+        margin-top: 16px;
+      }
+
+      .card-row .card {
+        flex: 1 1 0;
+        min-width: 0;
+      }
+
+      .card-row .card-body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+      }
+
+      .card-row .card-body > small {
+        margin-top: auto;
+      }
+
+      .card-row .card-img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+      }
     </style>
 </head>
 <body>
-    <div class="container">
-  <div class="sm:container">
-    </div>
 <main class="container py-4">
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -65,7 +98,40 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">下一張</span>
     </button>
-    
+  </div>
+  <div class="card-row">
+<div class="card">
+  <div class="card-body">
+    <img src="https://jibaofiles.s3.amazonaws.com/5a8cf65b9253ee5e7b554620.jpg" class="card-img" alt="...">
+    <h5 class="mt-2 mb-0">放天燈</h5>
+    <p class="card-text fg-2">放天燈早期具有報平安、警示聯絡的用途。今日「平溪天燈節」為國內知名的大型慶元宵活動，意涵已轉變為以燃放天燈來許願、祈福之意。 </p>
+    <small class="fg-3">資料來源:台灣宗教地圖</small>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <img src="https://www.fetnet.net/content/dam/fetnet/user_resource/cbu/images/life-circle/topics/2025/02/lanfes_con/LanFes_con-2.jpg" class="card-img" alt="...">
+    <h5 class="mt-2 mb-0">傳統花燈</h5>
+    <p class="card-text fg-2">在說元宵由來的時候有提到，古人原先會在正月十五這天掛上燈籠，其實是為了要騙過天帝「保命」用的，在順利度過危機後才演變成一個紀念平安順遂的習俗。</p>
+    <small class="fg-3">資料來源:親子天下</small>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPIYSfEl11AiM4F8R7ApWjwcV5EwGGsJnVstbEUDNnSlPC57UykUhxQpAI&s=10" class="card-img" alt="元宵燈會圖片">
+    <h5 class="mt-2 mb-0">吃湯圓</h5>
+    <p class="card-text fg-2">最應景的習俗需有美食相伴，「湯圓」就是每年元宵節必吃的！吃湯圓，象徵著「花好月圓、闔家慶團圓」。</p>
+    <small class="fg-3">資料來源:親子天下</small>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <img src="https://www.travel.taipei/content/images/articles/113530/1024x768_articles-image-oqsn3wun20ujcsbdlchyra.jpg" class="card-img" alt="...">
+    <h5 class="mt-2 mb-0">燈會</h5>
+    <p class="card-text fg-2">象徵著春天的到來。華人傳統會吃元宵、賞花燈、猜燈謎，以示祝賀。這是傳統新春定義的最後一天，亦是春節假期之後的第一個重要節日。</p>
+    <small class="fg-3">資料來源:維基百科</small>
+  </div>
+</div>
   </div>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
